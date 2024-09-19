@@ -1,0 +1,137 @@
+@import "fonts.css";
+@import "normalize.css";
+@import "swiper-styles-reset.css";
+@import "blocks/header.css";
+@import "blocks/main-page/hero.css";
+@import "blocks/footer.css";
+
+
+* {
+    font-family: "AGFriquerC", "Arial", sans-serif;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: auto;
+    background-color: #000000;
+}
+
+main {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #FFFFFF;
+}
+
+.main {
+    margin-top: -101px;
+}
+
+section {
+    position: relative;
+}
+
+a {
+    transition: 0.1s linear;
+}
+
+a:not(.button):hover {
+    opacity: 0.6;
+}
+
+.button {
+    background: radial-gradient(52.88% 89.23% at 50% 100%, rgba(211, 84, 255, 0.45) 0%, rgba(34, 32, 57, 0.45) 100%);
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-top: 1px solid rgba(198, 79, 240, 1);
+    border-bottom: 1px solid rgba(198, 79, 240, 1);
+    position: relative;
+    min-height: 65px;
+    max-width: 226px;
+    width: 100%;
+    box-shadow: 0px 0px 18px 0px rgba(211, 84, 255, 0.51) inset;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3px;
+    background: url('/images/button-decor.png') no-repeat center;
+    width: 38.5px;
+    height: 71px;
+}
+
+.button::before {
+    left: -3px;
+}
+
+.button::after {
+    right: -3px;
+    transform: rotate(180deg)
+}
+
+.button:hover {
+    background: radial-gradient(52.88% 89.23% at 50% 100%, #C639F7 0%, #2E0E3A 100%);
+}
+
+.button:active {
+    background: radial-gradient(52.88% 89.23% at 50% 100%, #641580 0%, #2E0E3A 100%);
+    border-top: 1px solid rgba(104, 37, 128, 1);
+    border-bottom: 1px solid rgba(104, 37, 128, 1);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1434px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    white-space: nowrap !important;
+    -webkit-clip-path: inset(100%) !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .button::before,
+    .button::after {
+        background: url('/images/button-decor@2x.png') no-repeat center;
+        background-size: cover;
+    }
+}

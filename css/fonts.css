@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'AGFriquerC';
+    src: local('AGFriquerC'), local('AGFriquerC'),
+    url('../fonts/agfriquerc.woff2') format('woff2'),
+    url('../fonts/agfriquerc.woff') format('woff'),
+    url('../fonts/agfriquerc.ttf') format('truetype'),
+    url('../fonts/agfriquerc.otf') format('opentype'),
+    url('../fonts/agfriquerc.svg#Montserrat') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
