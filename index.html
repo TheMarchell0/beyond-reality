@@ -9,10 +9,11 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
-    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileColor" content="#030713">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 <header class="header header_main">
@@ -48,7 +49,8 @@
             </nav>
             <button class="header__button button">
                 <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
-                User Account</button>
+                User Account
+            </button>
         </div>
     </div>
 </header>
@@ -56,74 +58,193 @@
     <section class="hero">
         <video class="hero__video-bg" src="/videos/hero-video-bg.mp4" autoplay muted loop type="video/mp4"></video>
         <div class="hero__container container">
-           <div class="hero__content">
-               <picture>
-                   <source
-                           srcset="images/main-logo.png 1x, ../images/main-logo@2x.png 2x"
-                   />
-                   <img
-                           src="images/main-logo.png"
-                           alt="Main logo"
-                           width="184"
-                           class="hero__logo"
-                   />
-               </picture>
-               <h1 class="hero__title">Beyond Reality</h1>
-               <p class="hero__descr">Dive into the perfect world of Lineage 2 essence, where you will find a huge variety of gaming and entertainment content</p>
-               <ul class="hero__servers-list">
-                   <li class="hero__servers-list-item">
+            <div class="hero__content">
+                <picture>
+                    <source
+                            srcset="images/main-logo.png 1x, ../images/main-logo@2x.png 2x"
+                    />
+                    <img
+                            src="images/main-logo.png"
+                            alt="Main logo"
+                            width="184"
+                            class="hero__logo"
+                    />
+                </picture>
+                <h1 class="hero__title">Beyond Reality</h1>
+                <p class="hero__descr">Dive into the perfect world of Lineage 2 essence, where you will find a huge
+                    variety of gaming and entertainment content</p>
+                <ul class="hero__servers-list">
+                    <li class="hero__servers-list-item">
                         <div class="hero__servers-list-head">
+                            <img
+                                    src="images/servers-logo-1.png"
+                                    alt="Server logo"
+                                    width="30"
+                                    class="hero__servers-logo"
+                            />
                             <p class="hero__servers-name">Eternal [x10]</p>
                             <p class="hero__servers-online">2345</p>
                         </div>
-                       <div class="hero__servers-progress"><span>95%</span></div>
-                       <div class="hero__servers-list-footer">
-                           <p class="hero__servers-list-footer-text">Full description</p>
-                           <p class="hero__servers-list-footer-text">8 september</p>
-                       </div>
-                   </li>
-                   <li class="hero__servers-list-item">
-                       <div class="hero__servers-list-head">
-                           <p class="hero__servers-name">midgard [x100]</p>
-                           <p class="hero__servers-online offline">Offline</p>
-                       </div>
-                       <div class="hero__servers-progress"><span>0%</span></div>
-                       <div class="hero__servers-list-footer">
-                           <p class="hero__servers-list-footer-text">Full description</p>
-                           <p class="hero__servers-list-footer-text">Soon</p>
-                       </div>
-                   </li>
-               </ul>
-               <button class="hero__button button">Start game</button>
-           </div>
+                        <div class="hero__servers-progress">
+                            <span style="width:100%;"></span>
+                            <p>95%</p>
+                        </div>
+                        <div class="hero__servers-list-footer">
+                            <p class="hero__servers-list-footer-text">Full description</p>
+                            <p class="hero__servers-list-footer-text">8 september</p>
+                        </div>
+                    </li>
+                    <li class="hero__servers-list-item">
+                        <div class="hero__servers-list-head">
+                            <img
+                                    src="images/servers-logo-2.png"
+                                    alt="Server logo"
+                                    width="30"
+                                    class="hero__servers-logo"
+                            />
+                            <p class="hero__servers-name">midgard [x100]</p>
+                            <p class="hero__servers-online offline">Offline</p>
+                        </div>
+                        <div class="hero__servers-progress">
+                            <span style="width:2%;"></span>
+                            <p>0%</p>
+                        </div>
+                        <div class="hero__servers-list-footer">
+                            <p class="hero__servers-list-footer-text">Full description</p>
+                            <p class="hero__servers-list-footer-text">Soon</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="hero__button button big">Start game</button>
+            </div>
         </div>
     </section>
-    <section class="why-us">
-        <div class="why-us__container container">
-
+    <section class="features">
+        <div class="features__container container">
+            <p class="features__subtitle section__subtitle">Our features</p>
+            <h2 class="features__title section__title">Why us?</h2>
         </div>
     </section>
     <section class="news">
         <div class="news__container container">
-
+            <p class="news__subtitle section__subtitle">Latest events</p>
+            <h2 class="news__title section__title">Project news</h2>
         </div>
     </section>
     <section class="rating">
         <div class="rating__container container">
-
+            <p class="rating__subtitle section__subtitle">The best of the best</p>
+            <h2 class="rating__title section__title">Rating</h2>
         </div>
     </section>
     <section class="communities">
         <div class="communities__container container">
-
+            <p class="communities__subtitle section__subtitle white">Stay tuned</p>
+            <h2 class="communities__title section__title">Our communities</h2>
         </div>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <div class="footer__container container">
-
+        <div class="footer__content">
+            <div class="footer__column big">
+                <div class="footer__column-head">
+                    <picture>
+                        <source
+                                srcset="images/main-logo.png 1x, ../images/main-logo@2x.png 2x"
+                        />
+                        <img
+                                src="images/main-logo.png"
+                                alt="Footer main logo"
+                                width="54"
+                                class="footer__logo"
+                        />
+                    </picture>
+                    <div class="footer__column-head-content">
+                        <p class="footer__column-head-content-title">
+                            l2majestic.world
+                        </p>
+                        <p class="footer__column-head-content-descr">
+                            © 2023-2024 Lineage 2 Essence Project
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="footer__column-text">Privacy Policy</a>
+                <a href="#" class="footer__column-text">User Agreement</a>
+                <a href="#" class="footer__column-text">Return Policy</a>
+            </div>
+            <div class="footer__column">
+                <p class="footer__column-title">About the project</p>
+                <a href="#" class="footer__column-text">Server description</a>
+                <a href="#" class="footer__column-text">Files</a>
+                <a href="#" class="footer__column-text">News</a>
+                <a href="#" class="footer__column-text">Community</a>
+            </div>
+            <div class="footer__column">
+                <p class="footer__column-title">For users</p>
+                <a href="#" class="footer__column-text">Register</a>
+                <a href="#" class="footer__column-text">User account</a>
+                <a href="#" class="footer__column-text">Donate</a>
+                <a href="#" class="footer__column-text">Statistics</a>
+            </div>
+            <div class="footer__socials">
+                <ul class="footer__socials-list socials-list">
+                    <li class="footer__socials-list-item socials-list-item">
+                        <a href="#">
+                            <picture>
+                                <source
+                                        srcset="images/youtube-icon.png 1x, ../images/youtube-icon@2x.png 2x"
+                                />
+                                <img
+                                        src="images/youtube-icon.png"
+                                        alt="Youtube icon"
+                                        width="40"
+                                        class="footer__socials-img socials-img"
+                                />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer__socials-list-item socials-list-item">
+                        <a href="#">
+                            <picture>
+                                <source
+                                        srcset="images/discord-icon.png 1x, ../images/discord-icon@2x.png 2x"
+                                />
+                                <img
+                                        src="images/discord-icon.png"
+                                        alt="Discord icon"
+                                        width="40"
+                                        class="footer__socials-img socials-img"
+                                />
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer__socials-list-item socials-list-item">
+                        <a href="#">
+                            <picture>
+                                <source
+                                        srcset="images/fb-icon.png 1x, ../images/fb-icon@2x.png 2x"
+                                />
+                                <img
+                                        src="images/fb-icon.png"
+                                        alt="Facebook icon"
+                                        width="40"
+                                        class="footer__socials-img socials-img"
+                                />
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__design-info">Design — UPNOVA</p>
+                <ul class="footer__code-list">
+                    <li class="footer__code-list-item">88x31</li>
+                    <li class="footer__code-list-item">88x31</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="module" src="js/script.js"></script>
 </html>

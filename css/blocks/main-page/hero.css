@@ -4,10 +4,12 @@
 
 .hero__video-bg {
     width: 100%;
+    max-width: 1916px;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     object-fit: cover;
 }
 
@@ -39,7 +41,12 @@
 .hero__servers-list {
     display: flex;
     align-items: center;
-    margin: 25px 0 24px;
+    margin: 25px 0 24px 16px;
+    align-self: flex-start;
+}
+
+.hero__servers-list-item:not(:last-child) {
+    margin-right: 24px;
 }
 
 .hero__servers-list-item {
@@ -49,7 +56,28 @@
     border: 1px solid rgba(118, 31, 148, 1);
     box-shadow: 0px 0px 18px 0px rgba(211, 84, 255, 0.24) inset;
     backdrop-filter: blur(9px);
-    min-height: 137px;
+    padding: 22px 17px 19px;
+    position: relative;
+}
+
+.hero__servers-list-item::before,
+.hero__servers-list-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3px;
+    background: url('/images/hero-servers-decor.png') no-repeat center;
+    width: 36px;
+    height: 143px;
+}
+
+.hero__servers-list-item::before {
+    left: -3px;
+}
+
+.hero__servers-list-item::after {
+    right: -3px;
+    transform: rotate(180deg)
 }
 
 .hero__servers-name {
@@ -63,7 +91,14 @@
 .hero__servers-list-footer {
     display: flex;
     align-items: center;
+}
+
+.hero__servers-list-footer {
     justify-content: space-between;
+}
+
+.hero__servers-logo {
+    margin-right: 10px;
 }
 
 .hero__servers-online {
@@ -72,6 +107,7 @@
     line-height: 26px;
     text-transform: uppercase;
     color: #39DB1F;
+    margin-left: auto;
 }
 
 .hero__servers-online.offline {
@@ -81,19 +117,25 @@
 .hero__servers-progress {
     background: #04081466;
     height: 16px;
-    width: 100%;
-    max-width: 90.763%;
+    margin: 17px 0 13px;
+    position: relative;
 }
 
-.hero__servers-progress span {
+.hero__servers-progress p {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     text-align: left;
     color: #FFFFFF;
     text-align: right;
-    display: block;
     padding: 1px 5px;
+    z-index: 1;
+    position: relative;
+}
+.hero__servers-progress span {
+    background: linear-gradient(90deg, #443B6A 0%, #9453FF 100%);
+    height: 100%;
+    position: absolute;
 }
 
 .hero__servers-list-footer-text {
@@ -103,7 +145,11 @@
     color: #949396;
 }
 
-.hero__button {
-    font-size: 24px;
-    line-height: 26px;
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .hero__servers-list-item::before,
+    .hero__servers-list-item::after {
+        background: url('/images/hero-servers-decor@2x.png') no-repeat center;
+        background-size: cover;
+    }
 }

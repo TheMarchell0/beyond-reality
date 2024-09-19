@@ -3,6 +3,8 @@
 @import "swiper-styles-reset.css";
 @import "blocks/header.css";
 @import "blocks/main-page/hero.css";
+@import "blocks/main-page/features.css";
+@import "blocks/main-page/rating.css";
 @import "blocks/footer.css";
 
 
@@ -19,7 +21,7 @@ body {
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-scrolling: auto;
-    background-color: #000000;
+    background-color: #030713;
 }
 
 main {
@@ -54,8 +56,8 @@ a:not(.button):hover {
     background: radial-gradient(52.88% 89.23% at 50% 100%, rgba(211, 84, 255, 0.45) 0%, rgba(34, 32, 57, 0.45) 100%);
     outline: none;
     font-size: 18px;
-    font-weight: 400;
     line-height: 20px;
+    font-weight: 400;
     color: #FFFFFF;
     text-transform: uppercase;
     border: none;
@@ -67,8 +69,13 @@ a:not(.button):hover {
     width: 100%;
     box-shadow: 0px 0px 18px 0px rgba(211, 84, 255, 0.51) inset;
     cursor: pointer;
-    transition: 0.1s linear;
+    transition:  background 0.1s linear;
     backdrop-filter: blur(9px);
+}
+
+.button.big {
+    font-size: 24px;
+    line-height: 26px;
 }
 
 a.button {
@@ -94,7 +101,7 @@ a.button {
 }
 
 .button::after {
-    right: -3px;
+    right: -6px;
     transform: rotate(180deg)
 }
 
@@ -126,6 +133,36 @@ a.button {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+
+.section__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25.94px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #949396;
+    margin-bottom: 20px;
+}
+
+.section__subtitle.white {
+    color: #C4C4C4;
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.socials-list {
+    display: flex;
+}
+
+.socials-list-item:not(:last-child) {
+    margin-right: 20px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
