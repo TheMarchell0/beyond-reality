@@ -36,6 +36,73 @@
     text-transform: uppercase;
 }
 
+.hero__servers-list {
+    display: flex;
+    align-items: center;
+    margin: 25px 0 24px;
+}
+
+.hero__servers-list-item {
+    flex: 0 0 374px;
+    background: radial-gradient(52.88% 89.23% at 50% 100%, rgba(66, 22, 81, 0.45) 0%, rgba(34, 32, 57, 0.45) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border: 1px solid rgba(118, 31, 148, 1);
+    box-shadow: 0px 0px 18px 0px rgba(211, 84, 255, 0.24) inset;
+    backdrop-filter: blur(9px);
+    min-height: 137px;
+}
+
+.hero__servers-name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.hero__servers-list-head,
+.hero__servers-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__servers-online {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #39DB1F;
+}
+
+.hero__servers-online.offline {
+    color: #949396;
+}
+
+.hero__servers-progress {
+    background: #04081466;
+    height: 16px;
+    width: 100%;
+    max-width: 90.763%;
+}
+
+.hero__servers-progress span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #FFFFFF;
+    text-align: right;
+    display: block;
+    padding: 1px 5px;
+}
+
+.hero__servers-list-footer-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #949396;
+}
+
 .hero__button {
     font-size: 24px;
     line-height: 26px;
