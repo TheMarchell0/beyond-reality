@@ -118,29 +118,218 @@
                 <button class="hero__button button big">Start game</button>
             </div>
         </div>
+        <picture>
+            <source
+                    srcset="images/hero-decor.png 1x, ../images/hero-decor@2x.png 2x"
+            />
+            <img
+                    src="images/hero-decor.png"
+                    alt="Hero decor"
+                    width="36"
+                    class="hero__decor"
+            />
+        </picture>
     </section>
     <section class="features">
         <div class="features__container container">
             <p class="features__subtitle section__subtitle">Our features</p>
             <h2 class="features__title section__title">Why us?</h2>
+            <div class="features__slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="features__slider-item decor-border swiper-slide">
+                        <img
+                                src="images/feature-bg-3.png"
+                                alt="Features background"
+                                class="features__slider-bg"
+                        />
+                        <p class="features__slider-title">Olympiad bonuses</p>
+                    </div>
+                    <div class="features__slider-item decor-border swiper-slide">
+                        <img
+                                src="images/feature-bg-1.png"
+                                alt="Features background"
+                                class="features__slider-bg"
+                        />
+                        <p class="features__slider-title">Reworked quests</p>
+                        <p class="features__slider-descr">A brief description for the project features card</p>
+                        <a href="#" class="features__slider-button button">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="features__slider-item decor-border swiper-slide">
+                        <img
+                                src="images/feature-bg-2.png"
+                                alt="Features background"
+                                class="features__slider-bg"
+                        />
+                        <p class="features__slider-title">Olympiad bonuses</p>
+                    </div>
+                </div>
+                <div class="features__slider-arrows slider-arrows">
+                    <div class="features__slider-arrows-prev swiper-button-prev"></div>
+                    <div class="features__slider-arrows-next swiper-button-next"></div>
+                </div>
+                <div class="features__slider-pagination swiper-pagination"></div>
+            </div>
         </div>
     </section>
     <section class="news">
         <div class="news__container container">
             <p class="news__subtitle section__subtitle">Latest events</p>
             <h2 class="news__title section__title">Project news</h2>
+            <ul class="news__content">
+                <li class="news__content-item decor-border big">
+                    <div class="news__content-bg" style="background-image: url('/images/news-bg-1.png')"></div>
+                    <a class="news__content-link" href="#"></a>
+                    <div class="news__content-head">
+                        <p class="news__content-head-tag">News</p>
+                        <p class="news__content-head-date">15.06.2024</p>
+                    </div>
+                    <div class="news__content-text">
+                        <p class="news__content-text-title">Main news headline</p>
+                        <p class="news__content-text-descr">A short description for a news card, brief information</p>
+                    </div>
+                </li>
+                <li class="news__content-item decor-border">
+                    <div class="news__content-bg" style="background-image: url('/images/news-bg-2.png')"></div>
+                    <a class="news__content-link" href="#"></a>
+                    <div class="news__content-head">
+                        <p class="news__content-head-tag">News</p>
+                        <p class="news__content-head-date">15.06.2024</p>
+                    </div>
+                    <div class="news__content-text">
+                        <p class="news__content-text-title">Minor news headline</p>
+                    </div>
+                </li>
+                <li class="news__content-item decor-border">
+                    <div class="news__content-bg" style="background-image: url('/images/news-bg-3.png')"></div>
+                    <a class="news__content-link" href="#"></a>
+                    <div class="news__content-head">
+                        <p class="news__content-head-tag">News</p>
+                        <p class="news__content-head-date">15.06.2024</p>
+                    </div>
+                    <div class="news__content-text">
+                        <p class="news__content-text-title">Minor news headline</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" target="_blank" class="news__button button">
+                All news
+            </a>
         </div>
     </section>
     <section class="rating">
         <div class="rating__container container">
             <p class="rating__subtitle section__subtitle">The best of the best</p>
             <h2 class="rating__title section__title">Rating</h2>
+            <ul class="rating__tabs">
+                <li class="rating__tabs-item">
+                    Top PVP
+                </li>
+                <li class="rating__tabs-item">
+                    Top PK
+                </li>
+                <li class="rating__tabs-item">
+                    Top EXP
+                </li>
+                <li class="rating__tabs-item">
+                    Top clan
+                </li>
+            </ul>
+            <div class="rating__content decor-border">
+                <p class="rating__content-title">Players rating table</p>
+                <ul class="rating__table">
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">MaJIuXa777</p>
+                        <p class="rating__table-score">12,561 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">underExposeD</p>
+                        <p class="rating__table-score">11,571 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">IGROK</p>
+                        <p class="rating__table-score">10,963 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">Nice</p>
+                        <p class="rating__table-score">9,169 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">MaJIuXa</p>
+                        <p class="rating__table-score">9,676 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">KappaPTS</p>
+                        <p class="rating__table-score">7,411 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">MrJI1m0n41K</p>
+                        <p class="rating__table-score">7,327 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">iFreeD</p>
+                        <p class="rating__table-score">6,871 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">chinazes</p>
+                        <p class="rating__table-score">5,167 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">DnDz</p>
+                        <p class="rating__table-score">4,378 PVP</p>
+                    </li>
+                    <li class="rating__table-item">
+                        <p class="rating__table-nickname">FallenAngel</p>
+                        <p class="rating__table-score">3,971 PVP</p>
+                    </li>
+                </ul>
+                <a href="#" class="rating__more-link">Full statistic</a>
+            </div>
         </div>
     </section>
     <section class="communities">
         <div class="communities__container container">
             <p class="communities__subtitle section__subtitle white">Stay tuned</p>
             <h2 class="communities__title section__title">Our communities</h2>
+            <ul class="communities__list">
+                <li class="communities__list-item decor-border communities__list-item_youtube">
+                    <a class="communities__link" href="#"></a>
+                    <div class="communities__logo-wrapper">
+                        <img
+                                src="images/communities-youtube-icon.svg"
+                                alt="Youtube icon"
+                                width="143"
+                                class="communities__logo"
+                        />
+                    </div>
+                    <p class="communities__list-title">Youtube</p>
+                </li>
+                <li class="communities__list-item decor-border communities__list-item_discord">
+                    <a class="communities__link" href="#"></a>
+                    <div class="communities__logo-wrapper">
+                        <img
+                                src="images/communities-discord-icon.svg"
+                                alt="Discord icon"
+                                width="141"
+                                class="communities__logo"
+                        />
+                    </div>
+                    <p class="communities__list-title">Discord</p>
+                </li>
+                <li class="communities__list-item decor-border communities__list-item_facebook">
+                    <a class="communities__link" href="#"></a>
+                    <div class="communities__logo-wrapper">
+                        <img
+                                src="images/communities-facebook-icon.svg"
+                                alt="Facebook icon"
+                                width="75"
+                                class="communities__logo"
+                        />
+                    </div>
+                    <p class="communities__list-title">Facebook</p>
+                </li>
+            </ul>
         </div>
     </section>
 </main>

@@ -4,7 +4,9 @@
 @import "blocks/header.css";
 @import "blocks/main-page/hero.css";
 @import "blocks/main-page/features.css";
+@import "blocks/main-page/news.css";
 @import "blocks/main-page/rating.css";
+@import "blocks/main-page/communities.css";
 @import "blocks/footer.css";
 
 
@@ -42,14 +44,8 @@ p {
 
 section {
     position: relative;
-}
-
-a {
-    transition: 0.1s linear;
-}
-
-a:not(.button):hover {
-    opacity: 0.6;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .button {
@@ -117,7 +113,7 @@ a.button {
 
 .container {
     margin: 0 auto;
-    max-width: 1434px;
+    max-width: 1431px;
     position: relative;
     padding: 0 20px;
 }
@@ -133,6 +129,11 @@ a.button {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+
+.decor-border {
+    border: 1px solid transparent;
+    border-image: linear-gradient(180deg, #9474F1 51.5%, #55438B 51.51%) 1;
 }
 
 .section__subtitle {
@@ -159,6 +160,14 @@ a.button {
 
 .socials-list {
     display: flex;
+}
+
+.socials-list-item {
+    transition: 0.1s linear;
+}
+
+.socials-list-item:hover {
+   opacity: 0.6;
 }
 
 .socials-list-item:not(:last-child) {

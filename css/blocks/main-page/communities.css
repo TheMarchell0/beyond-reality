@@ -1,0 +1,135 @@
+.communities {
+    margin-top: -21px;
+}
+
+.communities__list {
+    display: flex;
+    margin: 42px 0 99px;
+}
+
+.communities__list-item {
+    flex: 0 1 456px;
+    min-height: 365px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 89px 20px 20px;
+}
+
+.communities__list-item:not(:last-child) {
+    margin-right: 13px;
+}
+
+.communities__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.communities__logo-wrapper {
+    width: 172px;
+    height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.communities__list-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #949396;
+    text-transform: uppercase;
+}
+
+.communities__list-item:hover .communities__list-title {
+    color: #FFBD3D;
+}
+
+.communities__list-item::before,
+.communities__list-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.1s linear;
+}
+
+.communities__list-item::after {
+    opacity: 0;
+}
+
+.communities__list-item:hover::after {
+    opacity: 1;
+}
+
+.communities__list-item:hover::before {
+    opacity: 0;
+}
+
+.communities__list-item_youtube::before {
+    background-image: url('/images/communities-youtube-bg.png');
+}
+
+.communities__list-item_discord::before {
+    background-image: url('/images/communities-discord-bg.png');
+}
+
+.communities__list-item_facebook::before {
+    background-image: url('/images/communities-fb-bg.png');
+}
+
+.communities__list-item_youtube::after {
+    background-image: url('/images/communities-youtube-bg_hover.png');
+}
+
+.communities__list-item_discord::after {
+    background-image: url('/images/communities-discord-bg_hover.png');
+}
+
+.communities__list-item_facebook::after {
+    background-image: url('/images/communities-fb-bg_hover.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .communities__list-item_youtube::before {
+        background-image: url('/images/communities-youtube-bg@2x.png');
+        background-size: cover;
+    }
+
+    .communities__list-item_discord::before {
+        background-image: url('/images/communities-discord-bg@2x.png');
+        background-size: cover;
+    }
+
+    .communities__list-item_facebook::before {
+        background-image: url('/images/communities-fb-bg@2x.png');
+        background-size: cover;
+    }
+
+    .communities__list-item_youtube::after {
+        background-image: url('/images/communities-youtube-bg_hover@2x.png');
+        background-size: cover;
+    }
+
+    .communities__list-item_discord::after {
+        background-image: url('/images/communities-discord-bg_hover@2x.png');
+        background-size: cover;
+    }
+
+    .communities__list-item_facebook::after {
+        background-image: url('/images/communities-fb-bg_hover@2x.png');
+        background-size: cover;
+    }
+}

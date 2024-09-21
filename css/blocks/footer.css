@@ -10,7 +10,6 @@
 .footer__column {
     display: flex;
     flex-direction: column;
-    flex: 0 0 154px;
 }
 
 .footer__column:not(:last-of-type) {
@@ -60,14 +59,15 @@
 
 .footer__column-text {
     color: #949396;
+    transition: 0.1s linear;
 }
 
 .footer__column-text:not(:last-child) {
     margin-bottom: 18px;
 }
 
-.footer__socials {
-    flex: 0 0 229px;
+.footer__column-text:hover {
+    color: #FFBD3D;
 }
 
 .footer__design-info {
@@ -76,6 +76,7 @@
     line-height: 18px;
     color: #949396;
     position: relative;
+    margin: 13px 0 18px;
 }
 
 .footer__design-info::after {

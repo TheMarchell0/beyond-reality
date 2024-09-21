@@ -1,5 +1,22 @@
-.hero {
-    min-height: 851px;
+.hero::after,
+.hero::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(76, 67, 101, 0) 0%, #4C4365 100%);
+    height: 4px;
+    width: 48.91%;
+    z-index: 10;
+}
+
+.hero::before {
+    left: 0;
+}
+
+.hero::after {
+    right: 0;
+    transform: rotate(180deg);
 }
 
 .hero__video-bg {
@@ -19,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 161px;
+    padding: 161px 0 95px;
 }
 
 .hero__title {
@@ -41,11 +58,13 @@
 .hero__servers-list {
     display: flex;
     align-items: center;
-    margin: 25px 0 24px 16px;
+    margin: 25px 0 0 16px;
     align-self: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.hero__servers-list-item:not(:last-child) {
+.hero__servers-list-item:nth-child(odd) {
     margin-right: 24px;
 }
 
@@ -58,6 +77,7 @@
     backdrop-filter: blur(9px);
     padding: 22px 17px 19px;
     position: relative;
+    margin-bottom: 24px;
 }
 
 .hero__servers-list-item::before,
@@ -85,6 +105,13 @@
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 190px;
 }
 
 .hero__servers-list-head,
@@ -132,6 +159,7 @@
     z-index: 1;
     position: relative;
 }
+
 .hero__servers-progress span {
     background: linear-gradient(90deg, #443B6A 0%, #9453FF 100%);
     height: 100%;
@@ -145,8 +173,15 @@
     color: #949396;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi) {
+.hero__decor {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -16px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .hero__servers-list-item::before,
     .hero__servers-list-item::after {
         background: url('/images/hero-servers-decor@2x.png') no-repeat center;
