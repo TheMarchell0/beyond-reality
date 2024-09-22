@@ -64,10 +64,6 @@
     width: 100%;
 }
 
-.hero__servers-list-item:nth-child(odd) {
-    margin-right: 24px;
-}
-
 .hero__servers-list-item {
     flex: 0 0 374px;
     background: radial-gradient(52.88% 89.23% at 50% 100%, rgba(66, 22, 81, 0.45) 0%, rgba(34, 32, 57, 0.45) 100%),
@@ -78,6 +74,14 @@
     padding: 22px 17px 19px;
     position: relative;
     margin-bottom: 24px;
+}
+
+.hero__servers-list-item:nth-child(odd) {
+    margin-right: 24px;
+}
+
+.hero__servers-list-item:only-child {
+    margin: 0 auto 24px;
 }
 
 .hero__servers-list-item::before,

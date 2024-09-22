@@ -4,21 +4,27 @@
 
 .communities__list {
     display: flex;
-    margin: 42px 0 99px;
+    flex-wrap: wrap;
+    margin: 42px 0 86px;
 }
 
 .communities__list-item {
-    flex: 0 1 456px;
+    flex: 0 1 455px;
     min-height: 365px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 89px 20px 20px;
+    margin-bottom: 13px;
 }
 
-.communities__list-item:not(:last-child) {
+.communities__list-item:not(:nth-child(3n)) {
     margin-right: 13px;
+}
+
+.communities__list-item:only-child {
+    margin: 0 auto 13px;
 }
 
 .communities__link {
@@ -101,8 +107,7 @@
     background-image: url('/images/communities-fb-bg_hover.png');
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .communities__list-item_youtube::before {
         background-image: url('/images/communities-youtube-bg@2x.png');
         background-size: cover;

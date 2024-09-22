@@ -19,7 +19,6 @@
 <header class="header header_main">
     <div class="header__container container">
         <div class="header__wrapper">
-            <a class="header__logo-link" href="/">
                 <picture>
                     <source
                             srcset="images/main-logo.png 1x, ../images/main-logo@2x.png 2x"
@@ -31,17 +30,58 @@
                             class="header__logo"
                     />
                 </picture>
-            </a>
             <nav class="header__menu-nav">
                 <ul class="header__menu">
                     <li class="header__menu-item"><a href="#">Files</a></li>
                     <li class="header__menu-item"><a href="#">About</a></li>
-                    <li class="header__menu-item header__menu-item_submenu"><a href="#">Community</a>
-                        <!-- <ul class="header__submenu">
-                             <li class="header__submenu-item">1</li>
-                             <li class="header__submenu-item">1</li>
-                             <li class="header__submenu-item">1</li>
-                         </ul>-->
+                    <li class="header__menu-item js-submenu-block submenu"><a href="#">Community</a>
+                        <ul class="header__submenu socials-list js-submenu-content submenu-content">
+                            <li class="header__submenu-item socials-list-item">
+                                <a href="#">
+                                    <picture>
+                                        <source
+                                                srcset="images/youtube-icon.png 1x, ../images/youtube-icon@2x.png 2x"
+                                        />
+                                        <img
+                                                src="images/youtube-icon.png"
+                                                alt="Youtube icon"
+                                                width="40"
+                                                class="socials-img"
+                                        />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="header__submenu-item socials-list-item">
+                                <a href="#">
+                                    <picture>
+                                        <source
+                                                srcset="images/discord-icon.png 1x, ../images/discord-icon@2x.png 2x"
+                                        />
+                                        <img
+                                                src="images/discord-icon.png"
+                                                alt="Discord icon"
+                                                width="40"
+                                                class="socials-img"
+                                        />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="header__submenu-item socials-list-item">
+                                <a href="#">
+                                    <picture>
+                                        <source
+                                                srcset="images/fb-icon.png 1x, ../images/fb-icon@2x.png 2x"
+                                        />
+                                        <img
+                                                src="images/fb-icon.png"
+                                                alt="Facebook icon"
+                                                width="40"
+                                                class="socials-img"
+                                        />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__menu-item"><a href="#">Donate</a></li>
                     <li class="header__menu-item"><a href="#">Register</a></li>
@@ -49,7 +89,7 @@
             </nav>
             <button class="header__button button">
                 <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
-                User Account
+                <span>User Account</span>
             </button>
         </div>
     </div>
@@ -115,7 +155,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="hero__button button big">Start game</button>
+                <a href="#" target="_blank" class="hero__button button big"><span>Start game</span></a>
             </div>
         </div>
         <picture>
@@ -135,7 +175,7 @@
             <p class="features__subtitle section__subtitle">Our features</p>
             <h2 class="features__title section__title">Why us?</h2>
             <div class="features__slider swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper features__slider-wrapper">
                     <div class="features__slider-item decor-border swiper-slide">
                         <img
                                 src="images/feature-bg-3.png"
@@ -153,7 +193,7 @@
                         <p class="features__slider-title">Reworked quests</p>
                         <p class="features__slider-descr">A brief description for the project features card</p>
                         <a href="#" class="features__slider-button button">
-                            Read more
+                            <span>Read more</span>
                         </a>
                     </div>
                     <div class="features__slider-item decor-border swiper-slide">
@@ -214,7 +254,7 @@
                 </li>
             </ul>
             <a href="#" target="_blank" class="news__button button">
-                All news
+                <span>All news</span>
             </a>
         </div>
     </section>
@@ -222,69 +262,221 @@
         <div class="rating__container container">
             <p class="rating__subtitle section__subtitle">The best of the best</p>
             <h2 class="rating__title section__title">Rating</h2>
-            <ul class="rating__tabs">
-                <li class="rating__tabs-item">
-                    Top PVP
-                </li>
-                <li class="rating__tabs-item">
-                    Top PK
-                </li>
-                <li class="rating__tabs-item">
-                    Top EXP
-                </li>
-                <li class="rating__tabs-item">
-                    Top clan
-                </li>
-            </ul>
-            <div class="rating__content decor-border">
-                <p class="rating__content-title">Players rating table</p>
-                <ul class="rating__table">
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">MaJIuXa777</p>
-                        <p class="rating__table-score">12,561 PVP</p>
+            <div class="rating__tabs-content js-tabs-block">
+                <ul class="rating__tabs js-tabs">
+                    <li class="rating__tabs-item active js-tab" data-open-to="Top PVP">
+                        <span>Top PVP</span>
                     </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">underExposeD</p>
-                        <p class="rating__table-score">11,571 PVP</p>
+                    <li class="rating__tabs-item js-tab" data-open-to="Top PK">
+                        <span>Top PK</span>
                     </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">IGROK</p>
-                        <p class="rating__table-score">10,963 PVP</p>
+                    <li class="rating__tabs-item js-tab" data-open-to="Top EXP">
+                        <span>Top EXP</span>
                     </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">Nice</p>
-                        <p class="rating__table-score">9,169 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">MaJIuXa</p>
-                        <p class="rating__table-score">9,676 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">KappaPTS</p>
-                        <p class="rating__table-score">7,411 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">MrJI1m0n41K</p>
-                        <p class="rating__table-score">7,327 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">iFreeD</p>
-                        <p class="rating__table-score">6,871 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">chinazes</p>
-                        <p class="rating__table-score">5,167 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">DnDz</p>
-                        <p class="rating__table-score">4,378 PVP</p>
-                    </li>
-                    <li class="rating__table-item">
-                        <p class="rating__table-nickname">FallenAngel</p>
-                        <p class="rating__table-score">3,971 PVP</p>
+                    <li class="rating__tabs-item js-tab" data-open-to="Top clan">
+                        <span>Top clan</span>
                     </li>
                 </ul>
-                <a href="#" class="rating__more-link">Full statistic</a>
+                <div data-tab="Top PVP" class="rating__content js-tabs-content active decor-border">
+                    <p class="rating__content-title">Players rating table</p>
+                    <ul class="rating__table">
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa777</p>
+                            <p class="rating__table-score">12,561 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">underExposeD</p>
+                            <p class="rating__table-score">11,571 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">IGROK</p>
+                            <p class="rating__table-score">10,963 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">Nice</p>
+                            <p class="rating__table-score">9,169 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa</p>
+                            <p class="rating__table-score">9,676 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">KappaPTS</p>
+                            <p class="rating__table-score">7,411 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MrJI1m0n41K</p>
+                            <p class="rating__table-score">7,327 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">iFreeD</p>
+                            <p class="rating__table-score">6,871 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">chinazes</p>
+                            <p class="rating__table-score">5,167 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">DnDz</p>
+                            <p class="rating__table-score">4,378 PVP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">FallenAngel</p>
+                            <p class="rating__table-score">3,971 PVP</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="rating__more-link">Full statistic</a>
+                </div>
+                <div data-tab="Top PK" class="rating__content js-tabs-content decor-border">
+                    <p class="rating__content-title">Players rating table</p>
+                    <ul class="rating__table">
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa777</p>
+                            <p class="rating__table-score">12,561 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">underExposeD</p>
+                            <p class="rating__table-score">11,571 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">IGROK</p>
+                            <p class="rating__table-score">10,963 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">Nice</p>
+                            <p class="rating__table-score">9,169 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa</p>
+                            <p class="rating__table-score">9,676 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">KappaPTS</p>
+                            <p class="rating__table-score">7,411 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MrJI1m0n41K</p>
+                            <p class="rating__table-score">7,327 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">iFreeD</p>
+                            <p class="rating__table-score">6,871 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">chinazes</p>
+                            <p class="rating__table-score">5,167 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">DnDz</p>
+                            <p class="rating__table-score">4,378 PK</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">FallenAngel</p>
+                            <p class="rating__table-score">3,971 PK</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="rating__more-link">Full statistic</a>
+                </div>
+                <div data-tab="Top EXP" class="rating__content js-tabs-content decor-border">
+                    <p class="rating__content-title">Players rating table</p>
+                    <ul class="rating__table">
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa777</p>
+                            <p class="rating__table-score">12,561 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">underExposeD</p>
+                            <p class="rating__table-score">11,571 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">IGROK</p>
+                            <p class="rating__table-score">10,963 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">Nice</p>
+                            <p class="rating__table-score">9,169 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa</p>
+                            <p class="rating__table-score">9,676 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">KappaPTS</p>
+                            <p class="rating__table-score">7,411 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MrJI1m0n41K</p>
+                            <p class="rating__table-score">7,327 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">iFreeD</p>
+                            <p class="rating__table-score">6,871 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">chinazes</p>
+                            <p class="rating__table-score">5,167 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">DnDz</p>
+                            <p class="rating__table-score">4,378 EXP</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">FallenAngel</p>
+                            <p class="rating__table-score">3,971 EXP</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="rating__more-link">Full statistic</a>
+                </div>
+                <div data-tab="Top clan" class="rating__content js-tabs-content decor-border">
+                    <p class="rating__content-title">Players rating table</p>
+                    <ul class="rating__table">
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa777</p>
+                            <p class="rating__table-score">12,561 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">underExposeD</p>
+                            <p class="rating__table-score">11,571 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">IGROK</p>
+                            <p class="rating__table-score">10,963 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">Nice</p>
+                            <p class="rating__table-score">9,169 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MaJIuXa</p>
+                            <p class="rating__table-score">9,676 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">KappaPTS</p>
+                            <p class="rating__table-score">7,411 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">MrJI1m0n41K</p>
+                            <p class="rating__table-score">7,327 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">iFreeD</p>
+                            <p class="rating__table-score">6,871 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">chinazes</p>
+                            <p class="rating__table-score">5,167 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">DnDz</p>
+                            <p class="rating__table-score">4,378 Clan</p>
+                        </li>
+                        <li class="rating__table-item">
+                            <p class="rating__table-nickname">FallenAngel</p>
+                            <p class="rating__table-score">3,971 Clan</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="rating__more-link">Full statistic</a>
+                </div>
             </div>
         </div>
     </section>
