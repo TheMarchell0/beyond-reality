@@ -192,8 +192,18 @@
     width: 100%;
 }
 
+.rating__table-nickname {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 200px;
+}
+
 .rating__table-item:first-child .rating__table-nickname {
     padding: 109px 0 3px;
+    max-width: 151px;
+    text-align: center;
 }
 
 .rating__table-item::before {
