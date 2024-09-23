@@ -1,15 +1,24 @@
+import {CarouselModule} from '../modules/carousel.js';
+
 export function slidersInitialization() {
-    const activitiesSlider = new Swiper('.features__slider', {
+    const activitiesSlider = new Swiper('.js-features-slider', {
+        modules: [CarouselModule],
         slidesPerView: 'auto',
         initialSlide: 1,
-        spaceBetween: 20,
+        spaceBetween: 185,
         centeredSlides: true,
+        effect: "carousel",
+        carouselEffect: {
+            opacityStep: 0.6,
+            scaleStep: .52,
+            sideSlides: 1,
+        },
         navigation: {
-            nextEl: '.features__slider .swiper-button-next',
-            prevEl: '.features__slider .swiper-button-prev',
+            nextEl: '.js-features-slider-arrows-next',
+            prevEl: '.js-features-slider-arrows-prev',
         },
         pagination: {
-            el: '.features__slider .swiper-pagination',
+            el: '.js-features-slider-pagination',
             type: 'bullets',
             clickable: true,
         },
