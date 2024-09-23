@@ -39,20 +39,8 @@
     height: 100%;
 }
 
-.slider-arrows {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
-    position: initial!important;
-    left: initial!important;
-    right: initial!important;
-    top:initial!important;
     width:34px!Important;
     height:34px!important;
     margin-top:initial!important;

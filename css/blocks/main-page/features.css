@@ -4,7 +4,9 @@
 }
 
 .features__slider {
-    margin: 42px 0 0;
+    max-width: 1459px;
+    margin: 42px auto 0;
+    position: relative;
 }
 
 .features__slider-item {
@@ -72,12 +74,17 @@
     margin: 9px 0 15px;
 }
 
-.features__slider-arrows {
-    max-width: 1459px;
-    top: 464px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
+.features__slider-arrows-prev,
+.features__slider-arrows-next{
+    top: 247px!important;
+}
+
+.features__slider-arrows-prev {
+    left: 0!important;
+}
+
+.features__slider-arrows-next {
+    right: 0!important;
 }
 
 .features__slider-pagination {
