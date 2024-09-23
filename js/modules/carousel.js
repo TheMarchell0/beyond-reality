@@ -1,9 +1,9 @@
 export function CarouselModule({swiper: e, on: s, extendParams: t}) {
     t({
         carouselEffect: {
-            opacityStep: .33,
-            scaleStep: .2,
-            sideSlides: 2
+            opacityStep: 0.4,
+            scaleStep: .52,
+            sideSlides: 1,
         }
     }),
         s("beforeInit", (() => {
