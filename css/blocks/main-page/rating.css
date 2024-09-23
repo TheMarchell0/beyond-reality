@@ -92,6 +92,10 @@
     pointer-events: none;
 }
 
+.rating__tabs-item.active span {
+    color: #FFBD3D;
+}
+
 .rating__tabs-item.active span::after {
     opacity: 1;
 }
