@@ -9,7 +9,7 @@ export function slidersInitialization() {
         centeredSlides: true,
         effect: "carousel",
         carouselEffect: {
-            opacityStep: 0.6,
+            opacityStep: 0.4,
             scaleStep: .52,
             sideSlides: 1,
         },
