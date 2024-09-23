@@ -75,7 +75,8 @@
 .features__slider-arrows {
     max-width: 1459px;
     top: 464px;
-    left: 28px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .features__slider-pagination {
