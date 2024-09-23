@@ -7,7 +7,9 @@ export function slidersInitialization() {
         initialSlide: 1,
         spaceBetween: 185,
         centeredSlides: true,
+        allowTouchMove: false,
         effect: "carousel",
+        speed: 700,
         carouselEffect: {
             opacityStep: 0.4,
             scaleStep: .52,
