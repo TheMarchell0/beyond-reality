@@ -49,6 +49,13 @@
     background-size: 34px;
     transition: 0.1s linear;
 }
+
+.swiper-button-prev[disabled='true'],
+.swiper-button-next[disabled='true'],
+.swiper-pagination[disabled='true'] {
+    pointer-events: none;
+}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
     opacity: 0.4;

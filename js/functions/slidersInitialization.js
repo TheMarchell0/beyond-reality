@@ -25,4 +25,22 @@ export function slidersInitialization() {
             clickable: true,
         },
     })
+
+    createStagger(activitiesSlider);
+}
+
+function createStagger(slider) {
+    const sliderElements = [slider.navigation.nextEl, slider.navigation.prevEl, slider.pagination.el]
+
+    slider.on('slideChangeTransitionStart', () => {
+        for (let sliderElement of sliderElements) {
+            sliderElement.setAttribute('disabled', true);
+        }
+    });
+
+    slider.on('slideChangeTransitionEnd', () => {
+        for (let sliderElement of sliderElements) {
+            sliderElement.setAttribute('disabled', false);
+        }
+    });
 }
