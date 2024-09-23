@@ -25,7 +25,7 @@
     opacity: 0 !important;
 }
 
-.features__slider-item.swiper-slide:hover {
+.features__slider-item.swiper-slide.swiper-slide-visible:hover {
     opacity: 1!important;
 }
 
