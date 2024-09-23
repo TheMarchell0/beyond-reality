@@ -2,6 +2,7 @@ export function slidersInitialization() {
     const activitiesSlider = new Swiper('.features__slider', {
         slidesPerView: 'auto',
         initialSlide: 1,
+        spaceBetween: 20,
         centeredSlides: true,
         navigation: {
             nextEl: '.features__slider .swiper-button-next',

@@ -119,6 +119,11 @@ section {
     line-height: 26px;
 }
 
+.button[disabled] {
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
 a.button {
     display: flex;
     justify-content: center;
