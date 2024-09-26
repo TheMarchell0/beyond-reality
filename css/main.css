@@ -15,6 +15,9 @@
 @import "blocks/main-page/rating.css";
 @import "blocks/main-page/communities.css";
 
+/*Register page styles*/
+@import "blocks/register-page/main.css";
+
 
 * {
     font-family: "AGFriquerC", "Arial", sans-serif;
@@ -69,6 +72,11 @@ section {
     clip-path: inset(100%) !important;
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
+}
+
+.content {
+    background: url('/images/content-bg.png') no-repeat 0 0;
+    min-height: 100vh;
 }
 
 .decor-border,
@@ -332,6 +340,11 @@ only screen and (min-resolution: 192dpi) {
     .button::before,
     .button::after {
         background: url('/images/button-decor@2x.png') no-repeat center;
+        background-size: cover;
+    }
+
+    .content {
+        background: url('/images/content-bg@2x.png') no-repeat 0 0;
         background-size: cover;
     }
 }

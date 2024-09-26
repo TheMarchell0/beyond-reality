@@ -1,0 +1,22 @@
+.register {
+    padding: 160px 0 10px;
+}
+
+.register__title {
+    margin-bottom: 40px;
+}
+
+.register__form {
+    margin: 0 auto;
+    background: #6851AB26;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.register__form-label {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25.94px;
+    text-transform: uppercase;
+    color: #949396;
+}

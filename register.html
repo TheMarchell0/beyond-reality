@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Single news - Beyond Reality</title>
+    <title>Register - Beyond Reality</title>
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
@@ -96,18 +96,24 @@
     </div>
 </header>
 <main>
-    <section class="single-news content">
-        <div class="single-news__container container">
-            <div class="single-news__head">
-                <p class="single-news__tag">News</p>
-                <p class="single-news__date">15.06.2024</p>
-            </div>
-            <div class="single-news__content">
-                <h1>Main news headline</h1>
-                <img src="/images/single-news-plug-img.png" alt="Single news image">
-                <p>The hottest spot of Elmoreden, the Volcano Brazier, is ready to welcome guests. The interserver location is divided into two parts, where monsters of level 94+ live, so don't expect an easy walk. In the evening of each day, the boss Volcano Servant Valathion may appear, which only a well-coordinated group can handle. But this is not the main threat. Having defeated him, you will meet the most dangerous opponent - the new epic boss Volcano, who will make you feel like butter in a frying pan. Defeat him and get no less hot rewards: an exceptional doll, a 4-star spellbook and other random valuables.</p>
-                <p>In addition, the brave shield masters have been given a new look. They have received new skills and reworked old ones. But the biggest changes have been made to two of them, the Templars of Eva and Shilen. The forces of nature have made their bodies even stronger and their attacks more destructive.</p>
-            </div>
+    <section class="register content">
+        <div class="register__container container">
+            <h1 class="register__title section__title">Registration form</h1>
+            <form class="register__form decor-border">
+                <div class="register__input-wrapper">
+                    <input class="register__form-input" id="register-email" type="text" maxlength="30" placeholder="">
+                    <label for="register-email" class="register__form-label">E-mail</label>
+                </div>
+                <div class="register__input-wrapper">
+                    <input class="register__form-input" id="register-password" type="password" placeholder="">
+                    <label for="register-password" class="register__form-label">Password</label>
+                </div>
+                <div class="register__input-wrapper">
+                    <input class="register__form-input" id="register-password_repeat" type="password" placeholder="">
+                    <label for="register-password_repeat" class="register__form-label">Repeat password</label>
+                </div>
+                <button class="button" type="submit"><span>Submit</span></button>
+            </form>
         </div>
     </section>
 </main>

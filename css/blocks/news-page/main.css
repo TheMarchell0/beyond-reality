@@ -110,7 +110,6 @@
 }
 
 .single-news {
-    background: url('/images/content-bg.png') no-repeat 0 0;
     padding: 147px 0 80px;
 }
 
@@ -149,11 +148,6 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .news {
         background: url('/images/news-page-bg@2x.png') no-repeat 0 0;
-        background-size: cover;
-    }
-
-    .single-news {
-        background: url('/images/content-bg@2x.png') no-repeat 0 0;
         background-size: cover;
     }
 }
