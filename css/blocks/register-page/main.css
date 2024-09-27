@@ -1,5 +1,5 @@
 .register {
-    padding: 160px 0 10px;
+    padding: 160px 0;
 }
 
 .register__title {
@@ -9,14 +9,91 @@
 .register__form {
     margin: 0 auto;
     background: #6851AB26;
-    max-width: 1000px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.register__form-input-wrapper {
+    position: relative;
+    max-width: 350px;
     width: 100%;
 }
 
-.register__form-label {
-    font-size: 24px;
+.register__form-input-wrapper:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.register__form-input-wrapper::after {
+    content: 'Required field';
+    display: block;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    color: #ff0505;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 25.94px;
+    line-height: 1.1;
+    opacity: 0;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.email-error.register__form-input-wrapper::after {
+    content: 'Invalid email';
+}
+
+.register__form-input-wrapper.error::after {
+    opacity: 1;
+}
+
+.register__form-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.94px;
     text-transform: uppercase;
     color: #949396;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: top 0.3s, font-size 0.3s;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.error .register__form-label {
+    color: #ff0505;
+}
+
+.register__form-input {
+    background: #090A1099;
+    color: #FFFFFF;
+    padding: 16px 10px 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.94px;
+}
+
+.error .register__form-input {
+    border: 1px solid #ff0505;
+}
+
+.register__form-input:focus {
+    outline: none;
+}
+
+.register__form-input:focus + .register__form-label,
+.register__form-input:not(:placeholder-shown):not(:focus) + .register__form-label {
+    top: 9px;
+    font-size: 9px;
+}
+
+.register__form-button {
+    margin-top: 30px;
 }
