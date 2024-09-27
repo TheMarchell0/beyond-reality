@@ -47,6 +47,10 @@
     content: 'Invalid email';
 }
 
+.password-error.register__form-input-wrapper::after {
+    content: 'The two passwords do not match';
+}
+
 .register__form-input-wrapper.error::after {
     opacity: 1;
 }

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-<header class="header header_main">
+<header class="header">
     <div class="header__container container">
         <div class="header__wrapper">
             <a class="header__logo-link" href="/">
@@ -88,10 +88,10 @@
                     <li class="header__menu-item"><a href="/register.html">Register</a></li>
                 </ul>
             </nav>
-            <button class="header__button button">
+            <a href="/login.html" class="header__button button">
                 <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
                 <span>User Account</span>
-            </button>
+            </a>
         </div>
     </div>
 </header>
@@ -104,12 +104,12 @@
                     <input class="register__form-input decor-border js-input" id="register-email" type="text"  placeholder="">
                     <label for="register-email" class="register__form-label">E-mail</label>
                 </div>
-                <div class="register__form-input-wrapper js-input-wrapper">
-                    <input class="register__form-input decor-border js-input" id="register-password" type="password" placeholder="">
+                <div class="register__form-input-wrapper js-input-wrapper js-password-input">
+                    <input class="register__form-input decor-border js-input js-origin-password" id="register-password" type="password" placeholder="">
                     <label for="register-password" class="register__form-label">Password</label>
                 </div>
-                <div class="register__form-input-wrapper js-input-wrapper">
-                    <input class="register__form-input decor-border js-input" id="register-password_repeat" type="password" placeholder="">
+                <div class="register__form-input-wrapper js-input-wrapper js-password-input">
+                    <input class="register__form-input decor-border js-input js-repeat-password" id="register-password_repeat" type="password" placeholder="">
                     <label for="register-password_repeat" class="register__form-label">Repeat password</label>
                 </div>
                 <button class="register__form-button button js-submit-button" type="submit"><span>Submit</span></button>
