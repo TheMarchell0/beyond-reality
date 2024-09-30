@@ -32,7 +32,7 @@
             </picture>
             <nav class="header__menu-nav">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a href="#" class="header__menu-text">Files</a></li>
+                    <li class="header__menu-item js-modal-trigger" data-open-modal="files"><a href="#" class="header__menu-text">Files</a></li>
                     <li class="header__menu-item"><a href="#" class="header__menu-text">About</a></li>
                     <li class="header__menu-item js-submenu-block submenu"><span class="header__menu-text submenu__text">Community</span>
                         <ul class="header__submenu socials-list js-submenu-content submenu-content">
@@ -658,6 +658,14 @@
         </div>
     </div>
 </footer>
+<div id="files" class="modal js-modal">
+    <div class="modal__wrapper">
+        <div class="modal__head">
+            <p class="modal__head-title">Server files</p>
+            <img src="/images/close-icon.svg" class="modal__head-close js-close-modal" alt="Close" width="17">
+        </div>
+    </div>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="module" src="js/script.js"></script>

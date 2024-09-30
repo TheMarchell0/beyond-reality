@@ -144,6 +144,10 @@
     text-transform: uppercase;
     margin: 16px 0 21px;
 }
+
+.single-news__content a {
+    color: #55438b;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .news {
         background: url('/images/news-page-bg@2x.png') no-repeat 0 0;

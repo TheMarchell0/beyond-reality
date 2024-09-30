@@ -1,4 +1,4 @@
-export function ratingTabsFunctional(tabsBlock) {
+export function tabsFunctional(tabsBlock) {
     const tabs = tabsBlock.querySelectorAll('.js-tab');
     const contents = tabsBlock.querySelectorAll('.js-tabs-content');
 

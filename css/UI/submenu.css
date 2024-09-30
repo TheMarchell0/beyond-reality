@@ -1,0 +1,41 @@
+.submenu {
+    position: relative;
+}
+
+.submenu__text {
+    cursor: pointer;
+    position: relative;
+    padding-right: 29px;
+}
+
+a.submenu__text {
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+.submenu__text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 20px;
+    height: 15px;
+    background: url('/images/arrow.svg') no-repeat center;
+}
+
+.submenu-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.1s linear;
+}
+
+.submenu:hover .submenu-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
