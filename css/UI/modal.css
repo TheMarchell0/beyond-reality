@@ -33,6 +33,7 @@
     max-height: 100vh;
     -webkit-overflow-scrolling: touch;
     background: url('/images/modal-bg.png') no-repeat center;
+    background-size: cover;
     min-height: 300px;
 }
 
