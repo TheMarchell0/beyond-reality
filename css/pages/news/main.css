@@ -124,30 +124,12 @@
 
 .single-news__content {
     max-width: 920px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.single-news__content h1 {
-    margin: 21px 0 14px;
 }
 
 .single-news__content img {
-    width: 100%;
     margin: 14px 0 15px;
 }
 
-.single-news__content p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin: 16px 0 21px;
-}
-
-.single-news__content a {
-    color: #55438b;
-}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .news {
         background: url('/images/news-page-bg@2x.png') no-repeat 0 0;

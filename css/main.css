@@ -25,6 +25,9 @@
 /*Register page styles*/
 @import "pages/register-login/main.css";
 
+/*About page styles*/
+@import "pages/about/main.css";
+
 
 * {
     font-family: "AGFriquerC", "Arial", sans-serif;
@@ -51,6 +54,9 @@ main {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
     color: #FFFFFF;
 }
@@ -97,13 +103,13 @@ section {
     overflow: hidden;
 }
 
-.content {
+.content-section {
     background: url('/images/content-bg.png') no-repeat 0 0;
     min-height: 100vh;
 }
 
 .decor-border,
-.single-news__content img {
+.content img {
     border: 1px solid transparent;
     border-image: linear-gradient(180deg, #9474F1 51.5%, #55438B 51.51%) 1;
 }
@@ -122,8 +128,7 @@ section {
     color: #C4C4C4;
 }
 
-.section__title,
-.single-news__content h1 {
+.section__title {
     font-size: 48px;
     font-weight: 400;
     line-height: 52px;
@@ -131,8 +136,100 @@ section {
     text-transform: uppercase;
 }
 
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 21px 0 14px;
+}
+
+.content h1 {
+    font-size: 48px;
+    line-height: 52px;
+}
+
+
+.content h2 {
+    font-size: 43px;
+    line-height: 47px;
+}
+
+
+.content h3 {
+    font-size: 38px;
+    line-height: 42px;
+}
+
+
+.content h4 {
+    font-size: 33px;
+    line-height: 37px;
+}
+
+
+.content h5 {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+
+.content h6 {
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 16px 0 21px;
+}
+
+.content a {
+    color: #55438b;
+}
+
+.content hr {
+    border-color: #55438B;
+}
+
+.content ul {
+    list-style-type: initial;
+}
+
+.content ul,
+.content ol {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 0 0 0 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.content ul li:not(:last-of-type),
+.content ol li:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-    .content {
+    .content-section {
         background: url('/images/content-bg@2x.png') no-repeat 0 0;
         background-size: cover;
     }

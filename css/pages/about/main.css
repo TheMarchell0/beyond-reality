@@ -1,0 +1,14 @@
+.about {
+    padding: 147px 0 80px;
+}
+
+.about__content {
+    background: #6851AB26;
+    padding: 30px;
+}
+
+.about__content img {
+    max-width: 800px;
+    margin: 14px auto 15px;
+    display: block;
+}
