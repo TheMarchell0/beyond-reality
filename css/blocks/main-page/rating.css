@@ -145,13 +145,8 @@
     font-weight: 400;
     line-height: 20px;
     text-decoration: none;
-    transition: 0.1s linear;
     text-transform: uppercase;
     color: #FFBD3D;
-}
-
-.rating__more-link:hover {
-    opacity: 0.6;
 }
 
 .rating__table {
