@@ -7,6 +7,7 @@
 
 /*UI styles*/
 @import "UI/button.css";
+@import "UI/modal.css";
 @import "UI/submenu.css";
 @import "UI/socials-list.css";
 @import "UI/pagination.css";

@@ -32,8 +32,8 @@
                 </picture>
             </a>
             <nav class="header__menu-nav">
-                 <ul class="header__menu">
-                    <li class="header__menu-item"><a href="#" class="header__menu-text">Files</a></li>
+                <ul class="header__menu">
+                    <li class="header__menu-item js-modal-trigger" data-open-modal="files"><a href="#" class="header__menu-text">Files</a></li>
                     <li class="header__menu-item"><a href="#" class="header__menu-text">About</a></li>
                     <li class="header__menu-item js-submenu-block submenu"><span class="header__menu-text submenu__text">Community</span>
                         <ul class="header__submenu socials-list js-submenu-content submenu-content">
@@ -149,7 +149,7 @@
             <div class="footer__column">
                 <p class="footer__column-title">About the project</p>
                 <a href="#" class="footer__column-text">Server description</a>
-                <a href="#" class="footer__column-text">Files</a>
+                <a href="#" class="footer__column-text js-modal-trigger" data-open-modal="files">Files</a>
                 <a href="/news.html" target="_blank" class="footer__column-text">News</a>
                 <div class="footer__column-text js-submenu-block submenu"><span class="submenu__text">Community</span>
                     <ul class="header__submenu socials-list js-submenu-content submenu-content">
@@ -264,6 +264,106 @@
         </div>
     </div>
 </footer>
+<div id="files" class="modal js-modal">
+    <div class="modal__wrapper decor-border">
+        <div class="modal__head">
+            <p class="modal__head-title">Server files</p>
+            <img src="/images/close-icon.svg" class="modal__head-close js-close-modal" alt="Close" width="17">
+        </div>
+        <div class="modal__content modal__files-content">
+            <div class="modal__files-content-item">
+                <div class="modal__files-content-head">
+                    <div class="modal__files-content-head-title">
+                        <picture>
+                            <source
+                                    srcset="images/files-archive.png 1x, ../images/files-archive@2x.png 2x"
+                            />
+                            <img
+                                    src="images/files-archive.png"
+                                    alt="Archive image"
+                                    width="24"
+                                    class="modal__files-content-head-image"
+                            />
+                        </picture>
+                        <p class="modal__files-content-head-title-text">Patch for game</p>
+                        <p class="modal__files-content-head-title-size">347.5Mb</p>
+                    </div>
+                    <p class="modal__files-content-head-descr">Unzip to the root folder.</p>
+                </div>
+                <ul class="modal__files-list">
+                    <li class="modal__files-list-item">
+                        <a href="#" target="_blank"></a>
+                        <div class="modal__files-list-text">
+                            <p class="modal__files-list-text-title">Mirror #1</p>
+                            <p class="modal__files-list-text-descr">Google Drive</p>
+                        </div>
+                    </li>
+                    <li class="modal__files-list-item">
+                        <a href="#" target="_blank"></a>
+                        <div class="modal__files-list-text">
+                            <p class="modal__files-list-text-title">Mirror #2</p>
+                            <p class="modal__files-list-text-descr">Megafiles</p>
+                        </div>
+                    </li>
+                    <li class="modal__files-list-item">
+                        <a href="#" target="_blank"></a>
+                        <div class="modal__files-list-text">
+                            <p class="modal__files-list-text-title">Mirror #3</p>
+                            <p class="modal__files-list-text-descr">CDN</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__files-content-item">
+                <div class="modal__files-content-head">
+                    <div class="modal__files-content-head-title">
+                        <picture>
+                            <source
+                                    srcset="images/files-game-logo.png 1x, ../images/files-game-logo@2x.png 2x"
+                            />
+                            <img
+                                    src="images/files-game-logo.png"
+                                    alt="Archive image"
+                                    width="24"
+                                    class="modal__files-content-head-image"
+                            />
+                        </picture>
+                        <p class="modal__files-content-head-title-text">Updater</p>
+                        <p class="modal__files-content-head-title-size">4.1Mb</p>
+                    </div>
+                    <p class="modal__files-content-head-descr">If you already have any client, download the archive with the Updater</p>
+                </div>
+                <ul class="modal__files-list">
+                    <li class="modal__files-list-item">
+                        <a href="#" target="_blank"></a>
+                        <div class="modal__files-list-text">
+                            <p class="modal__files-list-text-title">Mirror #1</p>
+                            <p class="modal__files-list-text-descr">Google Drive</p>
+                        </div>
+                    </li>
+                    <li class="modal__files-list-item">
+                        <a href="#" target="_blank"></a>
+                        <div class="modal__files-list-text">
+                            <p class="modal__files-list-text-title">Mirror #2</p>
+                            <p class="modal__files-list-text-descr">Megafiles</p>
+                        </div>
+                    </li>
+                    <li class="modal__files-list-item">
+                        <a href="#" target="_blank"></a>
+                        <div class="modal__files-list-text">
+                            <p class="modal__files-list-text-title">Mirror #3</p>
+                            <p class="modal__files-list-text-descr">CDN</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal__footer">
+            <a href="/register.html" target="_blank" class="modal__footer-button button"><span>Register account</span></a>
+            <div class="modal__footer-text">Create a game account</div>
+        </div>
+    </div>
+</div>
 </body>
 <script type="module" src="js/script.js"></script>
 </html>
