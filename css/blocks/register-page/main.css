@@ -60,7 +60,7 @@
     font-weight: 400;
     line-height: 15.94px;
     text-transform: uppercase;
-    color: #949396;
+    color: #000000;
     position: absolute;
     top: 50%;
     left: 10px;
@@ -75,8 +75,8 @@
 }
 
 .register__form-input {
-    background: #090A1099;
-    color: #FFFFFF;
+    background: #d4a9ff;
+    color: #000000;
     padding: 16px 10px 10px;
     width: 100%;
     font-size: 14px;
