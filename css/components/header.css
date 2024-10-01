@@ -24,15 +24,15 @@
     display: flex;
 }
 
-.header__menu-item:not(:last-child){
+.header__menu-item:not(:last-child) {
     margin-right: 34px;
 }
 
-.header__menu-item.submenu>a {
+.header__menu-item.submenu > a {
     padding-right: 29px;
 }
 
-.submenu>a::after {
+.submenu > a::after {
     content: '';
     display: block;
     position: absolute;

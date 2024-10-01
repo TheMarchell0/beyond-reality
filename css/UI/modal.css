@@ -110,6 +110,7 @@
     font-weight: 400;
     line-height: 18px;
     color: #949396;
+    margin-left: 20px;
 }
 
 .modal__files-list {
@@ -237,6 +238,60 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .modal__files-list {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (max-width: 767px) {
+    .modal__head {
+        padding: 20px 22px 23px 15px;
+    }
+
+    .modal__files-content-item {
+        margin: 20px 15px;
+    }
+
+    .modal__files-content-head {
+        flex-direction: column;
+        align-items: initial;
+        margin-bottom: 21px;
+    }
+
+    .modal__files-content-head-title {
+        justify-content: initial;
+    }
+
+    .modal__files-content-head-title-size {
+        margin-left: auto;
+    }
+
+    .modal__files-content-head-descr {
+        text-transform: uppercase;
+        margin-left: initial;
+        margin-top: 5px;
+    }
+
+    .modal__files-list {
+        grid-template-columns: repeat(1, 100%);
+        grid-gap: 16px;
+    }
+
+    .modal__files-list-item {
+        padding: 12px 20px;
+        min-height: 132px;
+    }
+
+    .modal__files-list-item::before {
+        top: 18px;
+    }
+
+    .modal__footer-button {
+        max-width: 226px;
     }
 }
 
