@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-<header class="header">
+<header class="header js-header">
     <div class="header__container container">
         <div class="header__wrapper">
             <picture>
@@ -30,67 +30,80 @@
                         class="header__logo"
                 />
             </picture>
-            <nav class="header__menu-nav">
-                <ul class="header__menu">
-                    <li class="header__menu-item js-modal-trigger" data-open-modal="files"><a href="#" class="header__menu-text">Files</a></li>
-                    <li class="header__menu-item"><a href="/about.html" target="_blank" class="header__menu-text">About</a></li>
-                    <li class="header__menu-item js-submenu-block submenu"><span class="header__menu-text submenu__text">Community</span>
-                        <ul class="header__submenu socials-list js-submenu-content submenu-content">
-                            <li class="header__submenu-item socials-list-item">
-                                <a href="#">
-                                    <picture>
-                                        <source
-                                                srcset="images/youtube-icon.png 1x, ../images/youtube-icon@2x.png 2x"
-                                        />
-                                        <img
-                                                src="images/youtube-icon.png"
-                                                alt="Youtube icon"
-                                                width="40"
-                                                class="socials-img"
-                                        />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="header__submenu-item socials-list-item">
-                                <a href="#">
-                                    <picture>
-                                        <source
-                                                srcset="images/discord-icon.png 1x, ../images/discord-icon@2x.png 2x"
-                                        />
-                                        <img
-                                                src="images/discord-icon.png"
-                                                alt="Discord icon"
-                                                width="40"
-                                                class="socials-img"
-                                        />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="header__submenu-item socials-list-item">
-                                <a href="#">
-                                    <picture>
-                                        <source
-                                                srcset="images/fb-icon.png 1x, ../images/fb-icon@2x.png 2x"
-                                        />
-                                        <img
-                                                src="images/fb-icon.png"
-                                                alt="Facebook icon"
-                                                width="40"
-                                                class="socials-img"
-                                        />
-                                    </picture>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-text">Donate</a></li>
-                    <li class="header__menu-item"><a href="/register.html" class="header__menu-text">Register</a></li>
-                </ul>
-            </nav>
-            <a href="/login.html" class="header__button button">
-                <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
-                <span>User Account</span>
-            </a>
+            <div class="header__mobile-menu js-mobile-menu">
+                <img class="header__mobile-menu-close js-mobile-menu-close" src="/images/close-icon.svg" alt="close" width="18">
+                <nav class="header__menu-nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item js-modal-trigger" data-open-modal="files"><a href="#"
+                                                                                                  class="header__menu-text">Files</a>
+                        </li>
+                        <li class="header__menu-item"><a href="/about.html" target="_blank" class="header__menu-text">About</a>
+                        </li>
+                        <li class="header__menu-item js-submenu-block submenu"><span
+                                class="header__menu-text submenu__text">Community</span>
+                            <ul class="header__submenu socials-list js-submenu-content submenu-content center">
+                                <li class="header__submenu-item socials-list-item">
+                                    <a href="#">
+                                        <picture>
+                                            <source
+                                                    srcset="images/youtube-icon.png 1x, ../images/youtube-icon@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/youtube-icon.png"
+                                                    alt="Youtube icon"
+                                                    width="40"
+                                                    class="socials-img"
+                                            />
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="header__submenu-item socials-list-item">
+                                    <a href="#">
+                                        <picture>
+                                            <source
+                                                    srcset="images/discord-icon.png 1x, ../images/discord-icon@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/discord-icon.png"
+                                                    alt="Discord icon"
+                                                    width="40"
+                                                    class="socials-img"
+                                            />
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="header__submenu-item socials-list-item">
+                                    <a href="#">
+                                        <picture>
+                                            <source
+                                                    srcset="images/fb-icon.png 1x, ../images/fb-icon@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/fb-icon.png"
+                                                    alt="Facebook icon"
+                                                    width="40"
+                                                    class="socials-img"
+                                            />
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-text">Donate</a></li>
+                        <li class="header__menu-item"><a href="/register.html" class="header__menu-text">Register</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="/login.html" class="header__button button">
+                    <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
+                    <span>User Account</span>
+                </a>
+            </div>
+            <div class="header__mobile-menu-button js-mobile-menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
@@ -205,20 +218,25 @@
             <h2 class="main-page-news__title section__title">Project news</h2>
             <ul class="main-page-news__content">
                 <li class="main-page-news__content-item news__content-item decor-border big">
-                    <div class="main-page-news__content-bg news__content-bg" style="background-image: url('/images/news-bg-1.png')"></div>
-                    <a class="main-page-news__content-link news__content-link" href="/single-news.html" target="_blank"></a>
+                    <div class="main-page-news__content-bg news__content-bg"
+                         style="background-image: url('/images/news-bg-1.png')"></div>
+                    <a class="main-page-news__content-link news__content-link" href="/single-news.html"
+                       target="_blank"></a>
                     <div class="main-page-news__content-head news__content-head">
                         <p class="main-page-news__content-head-tag news__content-head-tag">News</p>
                         <p class="main-page-news__content-head-date news__content-head-date">15.06.2024</p>
                     </div>
                     <div class="main-page-news__content-text">
                         <p class="main-page-news__content-text-title news__content-text-title">Main news headline</p>
-                        <p class="main-page-news__content-text-descr news__content-text-descr">A short description for a news card, brief information</p>
+                        <p class="main-page-news__content-text-descr news__content-text-descr">A short description for a
+                            news card, brief information</p>
                     </div>
                 </li>
                 <li class="main-page-news__content-item news__content-item decor-border">
-                    <div class="main-page-news__content-bg news__content-bg" style="background-image: url('/images/news-bg-2.png')"></div>
-                    <a class="main-page-news__content-link news__content-link" href="/single-news.html" target="_blank"></a>
+                    <div class="main-page-news__content-bg news__content-bg"
+                         style="background-image: url('/images/news-bg-2.png')"></div>
+                    <a class="main-page-news__content-link news__content-link" href="/single-news.html"
+                       target="_blank"></a>
                     <div class="main-page-news__content-head news__content-head">
                         <p class="main-page-news__content-head-tag news__content-head-tag">News</p>
                         <p class="main-page-news__content-head-date news__content-head-date">15.06.2024</p>
@@ -228,8 +246,10 @@
                     </div>
                 </li>
                 <li class="main-page-news__content-item news__content-item decor-border">
-                    <div class="main-page-news__content-bg news__content-bg" style="background-image: url('/images/news-bg-3.png')"></div>
-                    <a class="main-page-news__content-link news__content-link" href="/single-news.html" target="_blank"></a>
+                    <div class="main-page-news__content-bg news__content-bg"
+                         style="background-image: url('/images/news-bg-3.png')"></div>
+                    <a class="main-page-news__content-link news__content-link" href="/single-news.html"
+                       target="_blank"></a>
                     <div class="main-page-news__content-head news__content-head">
                         <p class="main-page-news__content-head-tag news__content-head-tag">News</p>
                         <p class="main-page-news__content-head-date news__content-head-date">15.06.2024</p>
@@ -546,7 +566,7 @@
                 <a href="#" class="footer__column-text js-modal-trigger" data-open-modal="files">Files</a>
                 <a href="/news.html" target="_blank" class="footer__column-text">News</a>
                 <div class="footer__column-text js-submenu-block submenu"><span class="submenu__text">Community</span>
-                    <ul class="header__submenu socials-list js-submenu-content submenu-content">
+                    <ul class="footer__submenu socials-list js-submenu-content submenu-content">
                         <li class="header__submenu-item socials-list-item">
                             <a href="#">
                                 <picture>
@@ -592,7 +612,8 @@
                                 </picture>
                             </a>
                         </li>
-                    </ul></div>
+                    </ul>
+                </div>
             </div>
             <div class="footer__column">
                 <p class="footer__column-title">For users</p>
@@ -725,7 +746,8 @@
                         <p class="modal__files-content-head-title-text">Updater</p>
                         <p class="modal__files-content-head-title-size">4.1Mb</p>
                     </div>
-                    <p class="modal__files-content-head-descr">If you already have any client, download the archive with the Updater</p>
+                    <p class="modal__files-content-head-descr">If you already have any client, download the archive with
+                        the Updater</p>
                 </div>
                 <ul class="modal__files-list">
                     <li class="modal__files-list-item">
@@ -753,7 +775,8 @@
             </div>
         </div>
         <div class="modal__footer">
-            <a href="/register.html" target="_blank" class="modal__footer-button button"><span>Register account</span></a>
+            <a href="/register.html" target="_blank"
+               class="modal__footer-button button"><span>Register account</span></a>
             <div class="modal__footer-text">Create a game account</div>
         </div>
     </div>

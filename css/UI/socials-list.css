@@ -5,3 +5,9 @@
 .socials-list-item:not(:last-child) {
     margin-right: 20px;
 }
+
+@media (max-width: 767px) {
+    .socials-list-item:not(:last-child) {
+        margin-right: 14px;
+    }
+}

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-<header class="header">
+<header class="header js-header">
     <div class="header__container container">
         <div class="header__wrapper">
             <a class="header__logo-link" href="/">
@@ -31,67 +31,74 @@
                     />
                 </picture>
             </a>
-            <nav class="header__menu-nav">
-                <ul class="header__menu">
-                    <li class="header__menu-item js-modal-trigger" data-open-modal="files"><a href="#" class="header__menu-text">Files</a></li>
-                    <li class="header__menu-item"><a href="/about.html" target="_blank" class="header__menu-text">About</a></li>
-                    <li class="header__menu-item js-submenu-block submenu"><span class="header__menu-text submenu__text">Community</span>
-                        <ul class="header__submenu socials-list js-submenu-content submenu-content">
-                            <li class="header__submenu-item socials-list-item">
-                                <a href="#">
-                                    <picture>
-                                        <source
-                                                srcset="images/youtube-icon.png 1x, ../images/youtube-icon@2x.png 2x"
-                                        />
-                                        <img
-                                                src="images/youtube-icon.png"
-                                                alt="Youtube icon"
-                                                width="40"
-                                                class="socials-img"
-                                        />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="header__submenu-item socials-list-item">
-                                <a href="#">
-                                    <picture>
-                                        <source
-                                                srcset="images/discord-icon.png 1x, ../images/discord-icon@2x.png 2x"
-                                        />
-                                        <img
-                                                src="images/discord-icon.png"
-                                                alt="Discord icon"
-                                                width="40"
-                                                class="socials-img"
-                                        />
-                                    </picture>
-                                </a>
-                            </li>
-                            <li class="header__submenu-item socials-list-item">
-                                <a href="#">
-                                    <picture>
-                                        <source
-                                                srcset="images/fb-icon.png 1x, ../images/fb-icon@2x.png 2x"
-                                        />
-                                        <img
-                                                src="images/fb-icon.png"
-                                                alt="Facebook icon"
-                                                width="40"
-                                                class="socials-img"
-                                        />
-                                    </picture>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-text">Donate</a></li>
-                    <li class="header__menu-item"><a href="/register.html" class="header__menu-text">Register</a></li>
-                </ul>
-            </nav>
-            <a href="/login.html" class="header__button button">
-                <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
-                <span>User Account</span>
-            </a>
+            <div class="header__mobile-menu">
+                <nav class="header__menu-nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item js-modal-trigger" data-open-modal="files"><a href="#"
+                                                                                                  class="header__menu-text">Files</a>
+                        </li>
+                        <li class="header__menu-item"><a href="/about.html" target="_blank"
+                                                         class="header__menu-text">About</a></li>
+                        <li class="header__menu-item js-submenu-block submenu"><span
+                                class="header__menu-text submenu__text">Community</span>
+                            <ul class="header__submenu socials-list js-submenu-content submenu-content">
+                                <li class="header__submenu-item socials-list-item">
+                                    <a href="#">
+                                        <picture>
+                                            <source
+                                                    srcset="images/youtube-icon.png 1x, ../images/youtube-icon@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/youtube-icon.png"
+                                                    alt="Youtube icon"
+                                                    width="40"
+                                                    class="socials-img"
+                                            />
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="header__submenu-item socials-list-item">
+                                    <a href="#">
+                                        <picture>
+                                            <source
+                                                    srcset="images/discord-icon.png 1x, ../images/discord-icon@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/discord-icon.png"
+                                                    alt="Discord icon"
+                                                    width="40"
+                                                    class="socials-img"
+                                            />
+                                        </picture>
+                                    </a>
+                                </li>
+                                <li class="header__submenu-item socials-list-item">
+                                    <a href="#">
+                                        <picture>
+                                            <source
+                                                    srcset="images/fb-icon.png 1x, ../images/fb-icon@2x.png 2x"
+                                            />
+                                            <img
+                                                    src="images/fb-icon.png"
+                                                    alt="Facebook icon"
+                                                    width="40"
+                                                    class="socials-img"
+                                            />
+                                        </picture>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-text">Donate</a></li>
+                        <li class="header__menu-item"><a href="/register.html" class="header__menu-text">Register</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="/login.html" class="header__button button">
+                    <img src="/images/header-button-decor.svg" class="header__button-decor" width="24" alt="decor">
+                    <span>User Account</span>
+                </a>
+            </div>
         </div>
     </div>
 </header>
@@ -105,8 +112,17 @@
             <div class="single-news__content content">
                 <h1>Main news headline</h1>
                 <img src="/images/single-news-plug-img.png" alt="Single news image">
-                <p>The hottest spot of Elmoreden, the Volcano Brazier, is ready to welcome guests. The interserver location is divided into two parts, where monsters of level 94+ live, so don't expect an easy walk. In the evening of each day, the boss Volcano Servant Valathion may appear, which only a well-coordinated group can handle. But this is not the main threat. Having defeated him, you will meet the most dangerous opponent - the new epic boss Volcano, who will make you feel like butter in a frying pan. Defeat him and get no less hot rewards: an exceptional doll, a 4-star spellbook and other random valuables.</p>
-                <p>In addition, the brave shield masters have been given a new look. They have received new skills and reworked old ones. But the biggest changes have been made to two of them, the Templars of Eva and Shilen. The forces of nature have made their bodies even stronger and their attacks more destructive.</p>
+                <p>The hottest spot of Elmoreden, the Volcano Brazier, is ready to welcome guests. The interserver
+                    location is divided into two parts, where monsters of level 94+ live, so don't expect an easy walk.
+                    In the evening of each day, the boss Volcano Servant Valathion may appear, which only a
+                    well-coordinated group can handle. But this is not the main threat. Having defeated him, you will
+                    meet the most dangerous opponent - the new epic boss Volcano, who will make you feel like butter in
+                    a frying pan. Defeat him and get no less hot rewards: an exceptional doll, a 4-star spellbook and
+                    other random valuables.</p>
+                <p>In addition, the brave shield masters have been given a new look. They have received new skills and
+                    reworked old ones. But the biggest changes have been made to two of them, the Templars of Eva and
+                    Shilen. The forces of nature have made their bodies even stronger and their attacks more
+                    destructive.</p>
             </div>
         </div>
     </section>
@@ -192,7 +208,8 @@
                                 </picture>
                             </a>
                         </li>
-                    </ul></div>
+                    </ul>
+                </div>
             </div>
             <div class="footer__column">
                 <p class="footer__column-title">For users</p>
@@ -325,7 +342,8 @@
                         <p class="modal__files-content-head-title-text">Updater</p>
                         <p class="modal__files-content-head-title-size">4.1Mb</p>
                     </div>
-                    <p class="modal__files-content-head-descr">If you already have any client, download the archive with the Updater</p>
+                    <p class="modal__files-content-head-descr">If you already have any client, download the archive with
+                        the Updater</p>
                 </div>
                 <ul class="modal__files-list">
                     <li class="modal__files-list-item">
@@ -353,7 +371,8 @@
             </div>
         </div>
         <div class="modal__footer">
-            <a href="/register.html" target="_blank" class="modal__footer-button button"><span>Register account</span></a>
+            <a href="/register.html" target="_blank"
+               class="modal__footer-button button"><span>Register account</span></a>
             <div class="modal__footer-text">Create a game account</div>
         </div>
     </div>
