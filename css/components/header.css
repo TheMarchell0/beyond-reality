@@ -103,8 +103,8 @@
 .header__mobile-menu-close {
     display: none;
     position: absolute;
-    top: 34px;
-    right: 21px;
+    top: 40px;
+    right: 25px;
 }
 
 @media (max-width: 1024px) {
@@ -170,5 +170,10 @@
     .header__menu-text {
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .header__mobile-menu-close {
+        top: 34px;
+        right: 21px;
     }
 }
