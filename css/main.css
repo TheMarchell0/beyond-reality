@@ -230,6 +230,15 @@ section {
 
 @media (max-width: 767px) {
 
+    .content h1,
+    .content h2,
+    .content h3,
+    .content h4,
+    .content h5,
+    .content h6 {
+        margin: 15px 0 12px;
+    }
+
     .content h1 {
         font-size: 26px;
         line-height: 28px;
@@ -273,9 +282,20 @@ section {
         margin-bottom: 20px;
     }
 
+    .content img {
+        min-height: 251px;
+        object-fit: cover;
+    }
+
     .section__title {
         font-size: 26px;
         line-height: 28px;
+    }
+
+    .section__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 17px;
     }
 
     .container {
