@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 768px) {
-    .main-page-news__controls {
+    .main-page-news__slider-controls {
         position: relative;
         display: none;
     }
