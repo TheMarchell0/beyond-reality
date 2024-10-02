@@ -242,6 +242,8 @@
 }
 
 @media (max-width: 767px) {
+
+
     .modal__head {
         padding: 20px 22px 23px 15px;
     }
@@ -286,12 +288,6 @@
 
     .modal__footer-button {
         max-width: 226px;
-    }
-}
-
-@media (max-width: 767px) {
-    .modal {
-        align-items: flex-start;
     }
 }
 
