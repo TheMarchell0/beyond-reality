@@ -11,6 +11,7 @@
     width: 100%;
     height: 100%;
     background: rgb(0 0 0 / 83%);
+    overflow-y: auto;
 }
 
 .modal.active {
@@ -24,7 +25,6 @@
     width: 100%;
     position: relative;
     overflow-y: auto;
-    max-height: 100vh;
     -webkit-overflow-scrolling: touch;
     background: url('/images/modal-bg.png') no-repeat center;
     background-size: cover;
@@ -244,7 +244,6 @@
 @media (max-width: 767px) {
     .modal {
         align-items: flex-start;
-        justify-content: flex-start;
     }
 
     .modal__head {
