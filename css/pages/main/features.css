@@ -11,7 +11,7 @@
 
 .features__slider-item {
     position: relative;
-    display: flex!important;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     flex: 0 1 692px;
@@ -20,19 +20,15 @@
     justify-content: flex-end;
     padding: 28px 20px;
     cursor: pointer;
-    opacity: 0.4!important;
-}
-
-.features__slider-item:not(.swiper-slide-visible) {
-    opacity: 0 !important;
+    opacity: 0.4 !important;
 }
 
 .features__slider-item.swiper-slide.swiper-slide-visible:hover {
-    opacity: 1!important;
+    opacity: 1 !important;
 }
 
 .features__slider-item.swiper-slide-active {
-    opacity: 1!important;
+    opacity: 1 !important;
 }
 
 .features__slider-item.swiper-slide-active:hover .features__slider-bg {
@@ -75,24 +71,80 @@
 }
 
 .features__slider-arrows-prev,
-.features__slider-arrows-next{
-    top: 247px!important;
+.features__slider-arrows-next {
+    top: 247px !important;
 }
 
 .features__slider-arrows-prev {
-    left: 0!important;
+    left: 0 !important;
 }
 
 .features__slider-arrows-next {
-    right: 0!important;
+    right: 0 !important;
 }
 
-.features__slider-pagination {
-    margin-top: 18px;
+.features__slider-controls {
+    margin: 8px auto 0;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi) {
+@media (max-width: 1460px) {
+    .features__slider-controls {
+        position: relative;
+        max-width: 230px;
+        margin: 12px auto 0;
+    }
+
+    .features__slider-arrows-prev,
+    .features__slider-arrows-next {
+        top: 0 !important;
+    }
+
+    .features__slider-pagination {
+        margin-top: initial;
+    }
+}
+
+@media (min-width: 1200px) {
+    .features__slider-item:not(.swiper-slide-visible) {
+        opacity: 0 !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .features__slider-item {
+        flex: 0 1 347px;
+        min-height: 409px;
+    }
+
+    .swiper-slide-active .features__slider-title,
+    .features__slider-title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .features__slider-descr {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .features {
+        padding: 48px 0 63px;
+    }
+
+    .features__slider {
+        margin: 25px auto 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .features__slider-item {
+        flex: 0 1 295px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .features {
         background: url('/images/features-bg@2x.png') no-repeat center;
         background-size: cover;

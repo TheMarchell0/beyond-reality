@@ -12,9 +12,13 @@
     margin: 38px 0 33px;
 }
 
+.news__content-item,
+.news__content-item.swiper-slide {
+    display: flex;
+}
+
 .news__content-item {
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;

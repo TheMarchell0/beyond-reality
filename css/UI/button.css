@@ -96,6 +96,13 @@ a.button {
     opacity: 0;
 }
 
+@media (max-width: 767px) {
+    .button.big {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
     .button::before,
     .button::after {

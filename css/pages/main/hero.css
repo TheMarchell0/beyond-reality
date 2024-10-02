@@ -65,7 +65,8 @@
 }
 
 .hero__servers-list-item {
-    flex: 0 0 374px;
+    max-width: 374px;
+    width: 100%;
     background: radial-gradient(52.88% 89.23% at 50% 100%, rgba(66, 22, 81, 0.45) 0%, rgba(34, 32, 57, 0.45) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     border: 1px solid rgba(118, 31, 148, 1);
@@ -77,7 +78,7 @@
 }
 
 .hero__servers-list-item:nth-child(odd) {
-    margin-right: 24px;
+    margin-right: 23px;
 }
 
 .hero__servers-list-item:only-child {
@@ -179,10 +180,94 @@
 
 .hero__decor {
     position: absolute;
-    z-index: 10;
+    z-index: 11;
     left: 50%;
     transform: translateX(-50%);
     bottom: -16px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        background: url('/images/hero-bg_mobile.png') no-repeat 0 32px;
+    }
+
+    .hero__video-bg {
+        display: none;
+    }
+
+    .hero__content {
+        margin: 0 auto;
+        max-width: initial;
+        padding: 133px 0 65px;
+    }
+    .hero__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero__logo {
+        width: 88px;
+    }
+
+    .hero__descr {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .hero__servers-list {
+        margin: 25px 0 0 0;
+        align-self: initial;
+        max-width: 717px;
+    }
+
+    .hero__servers-list-item {
+        max-width: 347px;
+        padding: 18px 14px 19px;
+    }
+
+
+    .hero__servers-list-item::before,
+    .hero__servers-list-item::after {
+        background: url('/images/hero-servers-decor_mobile.png') no-repeat center;
+        height: 122px;
+    }
+
+    .hero__servers-logo {
+        width: 24px;
+    }
+
+    .hero__servers-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .hero__servers-online {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .hero__servers-progress {
+        margin: 10px 0 8px;
+    }
+
+    .hero__servers-progress p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        background: url('/images/hero-bg_mobile.png') no-repeat -597px 32px;
+    }
+
+    .hero__servers-list {
+        flex-direction: column;
+    }
+
+    .hero__servers-list-item:nth-child(odd) {
+        margin-right: initial;
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
@@ -190,5 +275,25 @@
     .hero__servers-list-item::after {
         background: url('/images/hero-servers-decor@2x.png') no-repeat center;
         background-size: cover;
+    }
+
+    @media (max-width: 1024px) {
+        .hero__servers-list-item::before,
+        .hero__servers-list-item::after {
+            background: url('/images/hero-servers-decor_mobile@2x.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .hero {
+            background: url('/images/hero-bg_mobile@2x.png') no-repeat 0 32px;
+            background-size: cover;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .hero {
+            background: url('/images/hero-bg_mobile@2x.png') no-repeat -597px 32px;
+            background-size: cover;
+        }
     }
 }
