@@ -130,6 +130,7 @@
     width: 100%;
     margin: 0 auto;
     display: none;
+    backdrop-filter: blur(8px);
 }
 
 .rating__content.active {
