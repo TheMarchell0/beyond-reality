@@ -43,6 +43,7 @@ export function slidersInitialization() {
                 }
             }
         })
+        createStagger(activitiesSliderMobile);
         createStagger(newsSlider);
     }
 
