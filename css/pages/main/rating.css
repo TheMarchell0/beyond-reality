@@ -13,8 +13,10 @@
 
 .rating__tabs {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    max-width: 732px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .rating__tabs-item {
@@ -42,7 +44,7 @@
     filter: grayscale(1);
 }
 
-.rating__tabs-item:not(:last-child) {
+.rating__tabs-item:not(:nth-child(4n)) {
     margin-right: 24px;
 }
 
@@ -109,7 +111,7 @@
 }
 
 .rating__tabs-item.active,
-.rating__tabs-item[disabled]{
+.rating__tabs-item[disabled] {
     pointer-events: none;
     background: radial-gradient(52.88% 89.23% at 50% 100%, #641580 0%, #2E0E3A 100%);
     box-shadow: 0px 0px 18px 0px #D354FF82 inset;
@@ -248,14 +250,108 @@
     .rating__table {
         height: initial;
         padding-left: initial;
+        align-items: center;
     }
 
     .rating__table-item:first-child {
         position: initial;
     }
 
+    .rating__table-item:first-child::before {
+        top: 82px;
+    }
+
     .rating__table-item:nth-child(n+7) {
         margin-left: initial;
+    }
+
+    .rating__table-item:nth-child(7n) {
+        margin-top: 9px;
+        padding-top: 24px;
+    }
+
+    .rating__table-item:nth-child(7n)::after {
+        top: 0px;
+        left: 50%;
+        background: url('/images/rating-decor-line_mobile.svg') no-repeat center;
+        height: 1px;
+        width: 311px;
+        transform: translateX(-50%);
+    }
+
+    .rating__table-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .rating {
+        padding-bottom: 85px;
+    }
+
+    .rating__tabs-wrapper {
+        margin: 16px auto 0;
+    }
+
+    .rating__tabs {
+        flex-wrap: nowrap;
+    }
+
+    .rating__tabs-item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .rating__tabs-item {
+        flex: 0 0 142px;
+        font-size: 16px;
+        line-height: 18px;
+        min-height: 48px;
+    }
+
+    .rating__content {
+        padding: 24px 16px 28px;
+    }
+
+    .rating__table {
+        margin: 19px 0 10px;
+    }
+
+    .rating__table-item:first-child::before {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .rating__table-item:not(:first-child) {
+        padding-left: 37px;
+    }
+
+    .rating__table-item::before {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .rating__content-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .rating__table-nickname {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .rating__table-score {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .rating__more-link {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .rating__table-nickname {
+        max-width: 140px;
     }
 }
 
@@ -267,6 +363,6 @@
 
     .rating__table-item:first-child {
         background: url('/images/top-rating-bg@2x.png') no-repeat center;
-        background-size: cover;
+        background-size: 121%;
     }
 }

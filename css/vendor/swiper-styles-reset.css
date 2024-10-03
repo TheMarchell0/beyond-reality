@@ -81,3 +81,9 @@
     width: 100%;
     height: 34px;
 }
+
+@media (max-width: 1024px) {
+    .slider-controls {
+        max-width: 230px;
+    }
+}

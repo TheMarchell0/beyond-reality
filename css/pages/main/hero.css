@@ -265,7 +265,7 @@
         flex-direction: column;
     }
 
-    .hero__servers-list-item:nth-child(odd) {
+    .hero__servers-list-item:nth-child(odd):not(:only-child) {
         margin-right: initial;
     }
 }

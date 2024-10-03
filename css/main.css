@@ -95,10 +95,6 @@ section {
     scrollbar-color: transparent transparent;
 }
 
-.full-width-container>* {
-    padding-left: 20px;
-}
-
 .visually-hidden {
     position: absolute !important;
     margin: 0 !important;

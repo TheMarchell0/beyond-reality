@@ -22,8 +22,8 @@ export function slidersInitialization() {
         })
 
         const newsSlider = new Swiper('.js-news-slider', {
-            slidesPerView: 1,
             spaceBetween: 14,
+            allowTouchMove: false,
             speed: 700,
             navigation: {
                 nextEl: '.js-news-slider-arrows-next',
@@ -34,6 +34,14 @@ export function slidersInitialization() {
                 type: 'bullets',
                 clickable: true,
             },
+            breakpoints: {
+                350: {
+                    slidesPerView: 1,
+                },
+                767: {
+                    slidesPerView: 1.4,
+                }
+            }
         })
         createStagger(newsSlider);
     }

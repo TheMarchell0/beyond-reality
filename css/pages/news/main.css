@@ -110,10 +110,6 @@
     transition: 0.3s linear;
 }
 
-.news__content-item:hover .news__content-bg {
-    transform: scale(1.28);
-}
-
 .single-news {
     padding: 147px 0 80px;
 }
@@ -142,6 +138,12 @@
 
     .news__content-bg {
         background-size: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .news__content-item:hover .news__content-bg {
+        transform: scale(1.28);
     }
 }
 
